@@ -1,0 +1,10 @@
+{
+    "name": "python:3.12-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/poetry:2": {}
+    },
+    "postCreateCommand": {
+        "for_poetry": "poetry config virtualenvs.in-project true"
+    }
+}
