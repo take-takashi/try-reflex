@@ -5,6 +5,8 @@
         "ghcr.io/devcontainers-contrib/features/poetry:2": {}
     },
     "postCreateCommand": {
-        "for_poetry": "poetry config virtualenvs.in-project true"
-    }
+        "for_poetry": "poetry config virtualenvs.in-project true",
+        "for_reflex": "cd reflex && poetry install"
+    },
+    "remoteUser": "vscode"
 }
