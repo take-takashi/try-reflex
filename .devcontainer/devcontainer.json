@@ -7,8 +7,11 @@
     "updateContentCommand": {
         "for_poetry_setting": "poetry config virtualenvs.in-project true"
     },
+    /*
     "postCreateCommand": {
         "pj_setting": "cd sample-reflex && poetry install --no-root && poetry shell &"
     },
+    */
+    "postCreateCommand": "bash .devcontainer/postCreateCommand.bash",
     "remoteUser": "vscode"
 }
