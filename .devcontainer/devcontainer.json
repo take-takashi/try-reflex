@@ -4,9 +4,11 @@
     "features": {
         "ghcr.io/devcontainers-contrib/features/poetry:2": {}
     },
+    "updateContentCommand": {
+        "for_poetry_setting": "poetry config virtualenvs.in-project true"
+    },
     "postCreateCommand": {
-        "for_poetry": "poetry config virtualenvs.in-project true",
-        "for_reflex": "cd reflex && poetry install"
+        // "for_reflex": "cd reflex && poetry install --no-root && poetry shell"
     },
     "remoteUser": "vscode"
 }

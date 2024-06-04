@@ -3,9 +3,6 @@
         {
             "path": ".",
             "name": "root"
-        },
-        {
-            "path": "reflexdir"
         }
     ]
 }
