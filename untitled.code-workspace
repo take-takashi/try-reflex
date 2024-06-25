@@ -14,10 +14,16 @@
         "editor.insertSpaces": true,
         "editor.formatOnSave": true, // 保存時にフォーマット
         // python settings
-        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.defaultInterpreterPath": "/usr/local/bin/python", // pythonの実行環境（プロジェクトごとに書換）
         "python.testing.unittestEnabled": false, // python unittestを使わない
-        "python.testing.pytestEnabled": true, // python pytestを使う
+        "python.testing.pytestEnabled": false, // python pytestの使用（プロジェクトごとに書換）
         "python.analysis.typeCheckingMode": "basic", // python型チェックを標準にする
-        "editor.defaultFormatter": "charliermarsh.ruff", // formatterをruffに設定
+        "ruff.organizeImports": false,
+        "ruff.format.args": [
+            "--config=pyproject.toml" // ruff設定をpyproject.tomlから読む
+        ],
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff", // formatterをruffに設定
+        }
     }
 }

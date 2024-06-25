@@ -1,0 +1,4 @@
+{
+    "python.defaultInterpreterPath": ".venv/bin/python", // 仮装環境を使用
+    "python.testing.pytestEnabled": true, // python pytestの使用（プロジェクトごとに書換）
+}
