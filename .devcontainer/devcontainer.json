@@ -3,7 +3,6 @@
     "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
     "features": {
         "ghcr.io/devcontainers-contrib/features/poetry:2": {}
-        //"ghcr.io/hspaans/devcontainer-features/pytest:1": {}
     },
     "containerEnv": {
         "PYTHONDONTWRITEBYTECODE": "1" // for pytest no cache
@@ -11,11 +10,9 @@
     "updateContentCommand": {
         "for_poetry_setting": "poetry config virtualenvs.in-project true"
     },
-    /*
     "postCreateCommand": {
-        "pj_setting": "cd sample-reflex && poetry install --no-root && poetry shell &"
+        "pj_setting": "cd sample-reflex && poetry install --no-root"
     },
-    */
     "customizations": {
         "vscode": {
             "extensions": [
@@ -27,6 +24,5 @@
             ]
         }
     },
-    "postCreateCommand": "bash .devcontainer/postCreateCommand.bash",
     "remoteUser": "vscode"
 }
